@@ -1,0 +1,14 @@
+# Taking list input from the user
+n=int(input("Enter numbers oof element:"))
+number=[]
+
+for i in range(n):
+    num= int(input(f"enter elerment{i+1}:"))
+    number.append(num)
+    
+    #calculating sum and average
+    total=sum(number)
+    average=total/n if n>0 else 0
+print("list",number         )
+print("sum of element:",total)
+print("average of elements:",average)
